@@ -1,44 +1,97 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
+# IntelliJ/Dart Editor
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VSCode
+.vscode/
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# macOS
+.DS_Store
+
+# Flutter/Dart specific
+**/build/
+**/ios/Flutter/**.last_build_id
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.pub-cache/
+.pub/
+
+# Android
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/*.iml
+**/android/**.iml
+**/android/**.properties
+
+# iOS
+**/ios/Podfile.lock
+**/ios/Pods/
+**/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+**/ios/Runner.xcodeproj/xcuserdata/
+
+# Web
+**/webdev.dart
+
+# VSCode config
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Android Studio
+.idea/*
+*.iml
+*.iws
+*.ipr
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+
+# Sublime Text
+.sublime-workspace
+.sublime-project
+
+# Flutter and Dart Settings
+**/analysis_options.yaml
+**/test/**/golden_tool_test.dart
+
+# Flutter Integration Test
+integration_test/.dart_tool/
+integration_test/flutter_test_config.dart
+integration_test/.packages
+
+# Build
+build/
+!build/web/
+
+# Cache and dependencies
+.cache/
 .packages
 .pub-cache/
 .pub/
-/build/
 
-# Symbolication related
-app.*.symbols
+# Android
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/*.iml
+**/android/**.iml
+**/android/**.properties
 
-# Obfuscation related
-app.*.map.json
+# iOS
+**/ios/Podfile.lock
+**/ios/Pods/
+**/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+**/ios/Runner.xcodeproj/xcuserdata/
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Web
+**/webdev.dart
