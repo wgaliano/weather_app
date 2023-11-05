@@ -1,10 +1,6 @@
-Certamente! Ecco un esempio di README per il tuo progetto GitHub:
-
----
-
 # Weather App
 
-A Flutter application that retrieves current temperature based on device location and time, utilizing [Open Meteo API](https://open-meteo.com/).
+A Flutter application that retrieves current temperature based on device location and time, utilizing [Open Meteo API](https://open-meteo.com/). State management is handled with [GetX](https://pub.dev/packages/get) for efficient and reactive state handling.
 
 ## Overview
 
@@ -13,45 +9,32 @@ This mobile app allows users to get real-time temperature information based on t
 ## Features
 
 - Retrieve temperature data based on device location and time.
-- User-friendly interface for easy navigation.
-
-## Screenshots
-
-![Screenshot 1](screenshots/screenshot1.png)
+- Efficient state management with GetX.
 
 ## Getting Started
 
-To run this project, you'll need to have Flutter installed on your machine. If you haven't already, you can download it [here](https://flutter.dev/docs/get-started/install).
+1. Clone the repository.
+2. Install dependencies using flutter pub get.
+3. Run the app with flutter run.
 
-1. Clone the repository:
+## Dependencies
 
-```bash
-git clone https://github.com/yourusername/weather-app.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd weather-app
-```
-
-3. Install dependencies:
-
-```bash
-flutter pub get
-```
-
-4. Run the app:
-
-```bash
-flutter run
-```
+- [GetX](https://pub.dev/packages/get)
+- [http](https://pub.dev/packages/http) - for API calls.
 
 ## Usage
 
 1. Launch the app on your device or simulator.
 2. Grant location access when prompted.
 3. The app will fetch and display the current temperature.
+
+## State Management with GetX
+
+This project utilizes the GetX package for efficient state management. Be sure to check out the [GetX documentation](https://pub.dev/packages/get) for more details.
+
+## Screenshots
+
+![Screenshot 1](screenshots/screenshot1.png)
 
 ## Contributing
 
@@ -60,5 +43,3 @@ If you'd like to contribute to this project, feel free to fork the repository an
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
