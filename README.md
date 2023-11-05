@@ -21,6 +21,8 @@ This mobile app allows users to get real-time temperature information based on t
 
 - [GetX](https://pub.dev/packages/get)
 - [http](https://pub.dev/packages/http) - for API calls.
+- [geolocator](https://pub.dev/packages/geolocator): ^10.1.0
+- [geocoding](https://pub.dev/packages/geocoding): ^2.1.1
 
 ## Usage
 
