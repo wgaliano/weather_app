@@ -1,4 +1,3 @@
-import 'dart:ffi';
 import 'package:intl/intl.dart';
 import 'package:weather_app/controllers/global_controller.dart';
 import 'package:flutter/material.dart';

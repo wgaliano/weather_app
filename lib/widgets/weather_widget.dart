@@ -6,13 +6,6 @@ class WeatherWidget extends StatelessWidget {
   const WeatherWidget({Key? key, required this.weather})
   :super(key: key);
 
-  /*@override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Text('${weather.hourly.values.elementAt(1)[DateTime.now().hour]} °C')
-    );
-  }*/
-
   @override
   Widget build(BuildContext context) {
     return Column(
