@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:geocoding/geocoding.dart';
 
-
 class HeaderWidget extends StatefulWidget {
   const HeaderWidget({super.key});
 
@@ -16,7 +15,8 @@ class HeaderWidget extends StatefulWidget {
 class _HeaderWidgetState extends State<HeaderWidget> {
   String city = "";
   String date = DateFormat("yMMMd").format(DateTime.now());
-  final GlobalController globalController = Get.put(GlobalController(), permanent: true);
+  final GlobalController globalController =
+      Get.put(GlobalController(), permanent: true);
 
   @override
   void initState() {
@@ -26,7 +26,8 @@ class _HeaderWidgetState extends State<HeaderWidget> {
   }
 
   getAddress(latitude, longitude) async {
-    List<Placemark> placemark = await placemarkFromCoordinates(latitude, longitude);
+    List<Placemark> placemark =
+        await placemarkFromCoordinates(latitude, longitude);
     Placemark place = placemark[0];
     setState(() {
       city = place.locality!;
